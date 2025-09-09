@@ -10,8 +10,8 @@ void setup() {
   pinMode(7, OUTPUT); // KUNING
   pinMode(8, OUTPUT); // HIJAU
   pinMode(9, OUTPUT); // MERAH
-  pinMode(10, OUTPUT); //KUNING
-  pinMode(11, OUTPUT); //HIJAU
+  pinMode(10, OUTPUT); // KUNING
+  pinMode(11, OUTPUT); // HIJAU
 
   // MERAH   : 0, 3, 6, 9
   // KUNING  : 1, 4, 7, 10
@@ -29,6 +29,8 @@ void atas() {
   digitalWrite(0, LOW);
   digitalWrite(3, LOW);
   digitalWrite(9, LOW);
+
+// Bagian Atas lampu Hijau, Sisanya merah
 }
 
 void bawah() {
@@ -42,6 +44,8 @@ void bawah() {
   digitalWrite(3, LOW);
   digitalWrite(6, LOW);
   digitalWrite(9, LOW);
+
+//Bagian Bawah lampu hijau, sisanya merah
 }
 
 void kiri() {
@@ -55,6 +59,8 @@ void kiri() {
   digitalWrite(5, LOW);
   digitalWrite(6, LOW);
   digitalWrite(9, LOW);
+
+//Bagian kiri lampu hijau, sisanya merah
 }
 
 void kanan() {
@@ -68,69 +74,81 @@ void kanan() {
   digitalWrite(0, LOW);
   digitalWrite(3, LOW);
   digitalWrite(6, LOW);
+
+//Bagian Kanan lampu hijau, sisanya merah
 }
 
 void kuning_kanan() {
   // kuning dan merah
-  digitalWrite(6, HIGH); //merah
-  digitalWrite(3, HIGH); //merah
-  digitalWrite(10, HIGH); // kuning
-  digitalWrite(1, HIGH); // kuning
+  digitalWrite(6, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(1, HIGH); 
   delay(2000);
   digitalWrite(6, LOW); 
   digitalWrite(3, LOW);
   digitalWrite(10, LOW);
   digitalWrite(1, LOW);
+
+//Lampu kuning menyala di bagian KANAN dan BAWAH
 }
 
 void kuning_bawah() {
   // kuning dan merah
-  digitalWrite(6, HIGH); //merah
-  digitalWrite(9, HIGH); // merah
-  digitalWrite(4, HIGH); // kuning
-  digitalWrite(1, HIGH); // kuning
+  digitalWrite(6, HIGH); 
+  digitalWrite(9, HIGH); 
+  digitalWrite(4, HIGH); 
+  digitalWrite(1, HIGH); 
   delay(2000);
   digitalWrite(6, LOW);
   digitalWrite(9, LOW);
   digitalWrite(4, LOW);
   digitalWrite(1, LOW);
+
+//Lampu kuning menyala di bagian BAWAH dan KIRI
 }
 
 void kuning_kiri() {
   // kuning dan merah
-  digitalWrite(9, HIGH); // abang
-  digitalWrite(0, HIGH); // merad
-  digitalWrite(4, HIGH); // kuning
-  digitalWrite(7, HIGH); // kuning
+  digitalWrite(9, HIGH); 
+  digitalWrite(0, HIGH); 
+  digitalWrite(4, HIGH); 
+  digitalWrite(7, HIGH); 
   delay(2000);
   digitalWrite(9, LOW);
   digitalWrite(0, LOW);
   digitalWrite(4, LOW);
   digitalWrite(7, LOW);
+
+//Lampu kuning menyala di bagian KIRI dan ATAS
 }
 
 void kuning_atas() {
   // kuning dan merah
-  digitalWrite(3, HIGH); // abang
-  digitalWrite(0, HIGH); // merad
-  digitalWrite(10, HIGH); // kuning
-  digitalWrite(7, HIGH); // kuning
+  digitalWrite(3, HIGH);
+  digitalWrite(0, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(7, HIGH);
   delay(2000);
   digitalWrite(3, LOW);
   digitalWrite(0, LOW);
   digitalWrite(10, LOW);
   digitalWrite(7, LOW);
+
+//Lampu kuning menyala di bagian ATAS dan KANAN
 }
 
 void loop() {
 // CODE UTAMA
   
-  kanan();
-  kuning_kanan();
-  bawah();
-  kuning_bawah();
-  kiri();
-  kuning_kiri();
-  atas();
-  kuning_atas();
+  kanan(); //Lampu Hijau dibagian KANAN
+  kuning_kanan(); //Lampu Kuning dibagian KANAN dan BAWAH
+  bawah(); //Lampu Hijau dibagian BAWAH
+  kuning_bawah(); //Lampu Kuning dibagian BAWAH dan KIRI
+  kiri(); //Lampu Hijau dibagian KIRI
+  kuning_kiri(); //Lampu Kuning dibagian KIRI dan ATAS
+  atas(); //Lampu Hijau di bagian ATAS
+  kuning_atas(); //Lampu Kuning dibagian ATAS dan BAWAH 
+
+// "void loop" akan mengulangi kode yang sama secara terus menerus
 }
