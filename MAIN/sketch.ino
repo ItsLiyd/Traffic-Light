@@ -148,7 +148,7 @@ void loop() {
   kiri(); //Lampu Hijau dibagian KIRI
   kuning_kiri(); //Lampu Kuning dibagian KIRI dan ATAS
   atas(); //Lampu Hijau di bagian ATAS
-  kuning_atas(); //Lampu Kuning dibagian ATAS dan BAWAH 
+  kuning_atas(); //Lampu Kuning dibagian ATAS dan KANAN
 
 // "void loop" akan mengulangi kode yang sama secara terus menerus
 }
