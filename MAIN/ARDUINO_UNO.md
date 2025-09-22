@@ -1,2 +1,3 @@
 # GAMABARAN PERANGKAT KERAS AING
-<img width="952" height="828" alt="Screenshot 2025-09-09 220215" src="https://github.com/user-attachments/assets/738d52b8-0872-4df0-ac07-3ed03f53ca30" />
+
+https://i.supaimg.com/4c171e83-4e1c-45b7-9d88-48fb29f97ff7.jpg
