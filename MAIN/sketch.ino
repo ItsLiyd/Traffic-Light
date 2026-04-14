@@ -2,7 +2,7 @@
 // 2 hari lembur untuk mengerjakan ini.
 // Maklumin kalo aga panjang, ini kode
 // original dari gw, bukan COPY PASTE...
-// >> by: Aurellio >> Github: ItsLiyd
+// >> by: Aurell >> Github: ItsLiyd
 
 void setup() {
   // Tempat naroh Pin
